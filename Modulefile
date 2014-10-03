@@ -1,0 +1,5 @@
+name    'smartsheet/kerberos'
+version '0.0.1'
+summary 'It does Kerberos stuff.'
+description 'It does a lot of Kerberos stuff.'
+dependency 'puppetlabs/stdlib', '4.1.0'
