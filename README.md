@@ -20,11 +20,16 @@ kerberos::keytab { '/root/test.keytab':
 ```
 
 # ActiveDirectory Requirements
-a User "puppetmaster". recommended to be a ServiceAccount
-an OU "PuppetNodes".
-the user "puppetmaster" needs the following permissions on OU "PuppetNodes":
-  Read
-  Create Computer Objects
-  Descendent Computer Objects => Reset Password
-  Descendent Computer Objects => Write All Properties
-  Descendent Computer Objects => Validated Write to Service Principal Name
+
+A `User` "puppetmaster".  Recommended to be a `ServiceAccount`.
+
+An `OU` "PuppetNodes".
+
+The `User` "puppetmaster" needs the following permissions on `OU` "PuppetNodes":
+```
+Read
+Create Computer Objects
+Descendent Computer Objects => Reset Password
+Descendent Computer Objects => Write All Properties
+Descendent Computer Objects => Validated Write to Service Principal Name
+```
